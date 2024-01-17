@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../../component/ui/Button"
-import ButtonList from "../../component/sidebar/ButtonList";
+import Button from "../../../component/ui/Button"
+import ButtonList from "../../../component/sidebar/ButtonList";
 
 const buttonList = [
     {
@@ -24,13 +24,13 @@ const buttonList = [
 function ButtonTest(props) {
     return (
         <>
-            <p>Button TEST</p>
+            <h3>Button TEST</h3>
+            <p>Button</p>
             <Button
                 name="TEST Button"
                 onClick={() => console.log("TEST Button")}
             />
-            <hr />
-            <p>ButtonList TEST</p>
+            <p>ButtonList</p>
             <ButtonList list={buttonList}/>
         </>
     );

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Image from "../../component/ui/Image";
+import Image from "../../../component/ui/Image";
 
 const TestImage = styled.div`
     overflow: hidden;
@@ -13,7 +13,7 @@ const TestImage = styled.div`
 function ImageTest(props) {
     return (
         <>
-            <p>Image TEST</p>
+            <h3>Image TEST</h3>
             <TestImage>
                 <Image
                     src={`/image/blog1.png`}
