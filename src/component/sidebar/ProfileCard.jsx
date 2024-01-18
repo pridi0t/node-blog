@@ -7,11 +7,11 @@ import ButtonList from "./ButtonList";
 
 const Wrapper = styled.div`
     display: flex;
-    width: 370px;
-    height: 111px;
-    background: #F4EEA9;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 111px;
+    background: #F4EEA9;
 `;
 
 const ProfileCardImage = styled.div`

@@ -3,11 +3,10 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
     overflow: hidden;
-    width: 340px;
     margin-bottom: 10px;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: white;
+    background: white;
     & a {
         text-decoration: none;
     }
@@ -37,8 +36,8 @@ const CategoryToggle = styled.div`
 const SubCategory = styled.a`
     display: ${(props) => props.$displaySub ? "block" : "none"};
     margin-top: 8px;
-    font-size: 15px;
     font-weight: 300;
+    font-size: 15px;
 `;
 
 function Category(props) {

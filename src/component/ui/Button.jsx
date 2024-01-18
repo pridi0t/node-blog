@@ -6,8 +6,8 @@ const CustomButton = styled.button`
     padding: 2px 10px;
     border: 1px solid black;
     border-radius: 5px;
-    background: #F0BB62;
     font-size: 12px;
+    background: #F0BB62;
 `;
 
 function Button(props) {
