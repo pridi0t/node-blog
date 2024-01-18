@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 import Image from "../ui/Image";
@@ -32,39 +31,20 @@ const UserId = styled.h3`
     font-size: 20px;
 `;
 
-const buttonList = [
-    {
-        name: "Home",
-        url: "/blog"
-    },
-    {
-        name: "Info",
-        url: "#"
-    },
-    {
-        name: "Logout",
-        url: "#"
-    },
-    {
-        name: "write new",
-        url: "/blog/post"
-    },
-];
-
 function ProfileCard(props) {
-    const navigate = useNavigate();
+    const { nickname, imageSrc, imageClick, buttonList } = props;
 
     return (
         <Wrapper>
             <ProfileCardImage>
                 <Image
-                    src={`/image/blog1.png`}
-                    onClick={() => navigate("/profile")}
+                    src={imageSrc}
+                    onClick={imageClick}
                 />
             </ProfileCardImage>
             <Content>
                 <div>
-                    <UserId>USERID</UserId>
+                    <UserId>{nickname}</UserId>
                     <ButtonList list={buttonList}/>
                 </div>
             </Content>
