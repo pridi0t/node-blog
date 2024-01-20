@@ -16,7 +16,7 @@ function ImageTest(props) {
             <h3>Image TEST</h3>
             <TestImage>
                 <Image
-                    src={`/image/defaultProfile.png`}
+                    src={`/image/default-profile.png`}
                     onClick={() => console.log("image click")}
                 />
             </TestImage>
