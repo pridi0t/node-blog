@@ -11,8 +11,9 @@ const Title = styled.h1`
     color: #064635;
 `;
 
-const GreenButton = styled(Button)`
-    background: none;
+const WrapperButton = styled.div`
+    margin-top: 20px;
+    text-align: right;
 `;
 
 function PostListContent(props) {
@@ -23,14 +24,20 @@ function PostListContent(props) {
         <>
             <Title>{title}</Title>
             <PostList list={list}/>
-            <GreenButton
-                name={`Previous`}
-                onClick={() => navigate("/#")}
-            />
-            <GreenButton
-                name={`Next`}
-                onClick={() => navigate("/#")}
-            />
+            <WrapperButton>
+                <Button
+                    name={`Previous`}
+                    onClick={() => navigate("#")}
+                    color="white"
+                    background="#064635"
+                />
+                <Button
+                    name={`Next`}
+                    onClick={() => navigate("#")}
+                    color="white"
+                    background="#064635"
+                />
+            </WrapperButton>
         </>
     );
 }

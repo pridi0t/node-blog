@@ -5,8 +5,8 @@ import { BrowserRouter } from "react-router-dom";
 // import ImageTest from "../test/component/ui/ImageTest";
 // import ProfileCardTest from "./component/sidebar/ProfileCardTest";
 // import CategoryTest from "./component/sidebar/CategoryTest";
+// import PostListTest from "./component/content/PostListTest";
 import BlogPage from "../component/page/BlogPage";
-import PostListTest from "./component/content/PostListTest";
 
 function Test(props) {
     return (
@@ -17,9 +17,9 @@ function Test(props) {
             <hr/>
             <h3>Sidebar TEST</h3>
             <ProfileCardTest />
-            <CategoryTest/> */}
+            <CategoryTest/>
+            <PostListTest /> */}
             <BlogPage />
-            {/* <PostListTest /> */}
         </BrowserRouter>
     );
 }
