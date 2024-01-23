@@ -26,13 +26,13 @@ function PostListContent(props) {
             <PostList list={list}/>
             <WrapperButton>
                 <Button
-                    name={`Previous`}
+                    name="Previous"
                     onClick={() => navigate("#")}
                     color="white"
                     background="#064635"
                 />
                 <Button
-                    name={`Next`}
+                    name="Next"
                     onClick={() => navigate("#")}
                     color="white"
                     background="#064635"

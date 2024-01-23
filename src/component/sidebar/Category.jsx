@@ -7,6 +7,7 @@ const Wrapper = styled.div`
     padding: 10px 20px;
     border-radius: 5px;
     background: white;
+    opacity: ${(props) => props.$displaySub ? "0.8" : "1"};
     & a {
         text-decoration: none;
     }
@@ -49,7 +50,7 @@ function Category(props) {
     }
 
     return (
-        <Wrapper>
+        <Wrapper $displaySub={displaySub}>
             <WrapperCategory>
                 <MainCategory
                     href={"#"}

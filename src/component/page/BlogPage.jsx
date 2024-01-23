@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.div`
-    width: 60%;
+    max-width: 1000px;
     padding: 60px 100px;
     background: white;
     box-sizing: border-box;
@@ -74,8 +74,8 @@ function BlogPage(props) {
         <Container>
             <Sidebar>
                 <ProfileCard
-                    nickname={`USERID`}
-                    imageSrc={`/image/default-profile.png`}
+                    nickname="USERID"
+                    imageSrc="/image/default-profile.png"
                     imageClick={() => navigate("/profile")}
                     buttonList={buttonList}
                 />
