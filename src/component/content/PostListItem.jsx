@@ -6,7 +6,7 @@ import Image from "../ui/Image";
 const Post = styled.div`
     display: flex;
     width: 100%;
-    height: 130px;
+    height: 110px;
     margin-bottom: 10px;
     padding: 15px;
     border: 2px solid #064635;
@@ -15,20 +15,20 @@ const Post = styled.div`
 
 const WrapperImage = styled.div`
     overflow: hidden;
-    width: 130px;
+    width: 120px;
     border-radius: 10px;
 `;
 
 const Content = styled.div`
     overflow: hidden;
-    width: calc(100% - 130px);
+    width: calc(100% - 120px);
     margin-left: 10px;
 `;
 
 const Title = styled.h3`
     overflow: hidden;
     margin-bottom: 3px;
-    font-size: 20px;
+    font-size: 18px;
     color: #064635;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -36,7 +36,7 @@ const Title = styled.h3`
 
 const Text = styled.p`
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     font-size: 13px;
