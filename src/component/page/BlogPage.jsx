@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 import ProfileCard from "../sidebar/ProfileCard";
 import CategoryList from "../sidebar/CategoryList"
 import PostListContent from "../content/PostListContent";
+import WritePost from "../content/WritePost";
 import Post from "../content/Post";
 
 import categoryData from "../../data/categoryData.json";
@@ -88,6 +89,7 @@ function BlogPage(props) {
                 <Content>
                     <Routes>
                         <Route index element={<PostListContent title={`Recent Posts`} list={list} />}/>
+                        <Route path="/post" element={<WritePost />} />
                         <Route path="/post/:postId" element={<Post postData={postData}/>} />
                     </Routes>
                 </Content>

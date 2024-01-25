@@ -34,7 +34,7 @@ function Post(props) {
     const { postData } = props;
     const { postId } = useParams();
 
-    const post = postData.find((post) => post._id == postId);
+    const post = postData.find((post) => post._id === postId);
 
     return (
         <>

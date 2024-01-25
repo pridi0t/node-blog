@@ -7,7 +7,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<p>프로필</p>}/>
+        <Route index element={<p>메인화면</p>}/>
+        <Route path="/profile" element={<p>프로필화면</p>}/>
         <Route path="/blog/*" element={<BlogPage />}/>
       </Routes>
     </BrowserRouter>
