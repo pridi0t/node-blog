@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 import postData from "../../../data/postData.json";
-import PostListItem from "../../../component/content/PostListItem";
-import PostList from "../../../component/content/PostList";
+import PostListItem from "../../../component/blog/PostListItem";
+import PostList from "../../../component/blog/PostList";
 
 const Wrapper = styled.div`
     width: 700px;

@@ -4,9 +4,9 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 
 import ProfileCard from "../sidebar/ProfileCard";
 import CategoryList from "../sidebar/CategoryList"
-import PostListContent from "../content/PostListContent";
-import WritePost from "../content/WritePost";
-import Post from "../content/Post";
+import PostListContent from "../blog/PostListContent";
+import WritePost from "../blog/WritePost";
+import Post from "../blog/Post";
 
 import categoryData from "../../data/categoryData.json";
 import postData from "../../data/postData.json"
