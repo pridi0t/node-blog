@@ -8,7 +8,6 @@ import PostList from "../../../component/blog/PostList";
 
 const Wrapper = styled.div`
     width: 700px;
-    height: 180px;
     padding: 20px;
 `;
 
@@ -22,19 +21,22 @@ function PostListTest(props) {
     list = list.slice(0, PER_PAGE);
 
     return (
-        <Wrapper>
-            <p>PostListItem</p>
-            <PostListItem
-                title={list[0].title}
-                content={list[0].content}
-                thumbnail={`/image/default-post-thumbnail.png`}
-                onClick={() => navigate(`/blog/post/:${list[0]._id}`)}
-            />
-            <p>PostList</p>
-            <PostList
-                list={list}
-            />
-        </Wrapper>
+        <>
+            <h3>PostItem TEST</h3>
+            <Wrapper>
+                <p>PostListItem</p>
+                <PostListItem
+                    title={list[0].title}
+                    content={list[0].content}
+                    thumbnail={`/image/default-post-thumbnail.png`}
+                    onClick={() => navigate(`/blog/post/:${list[0]._id}`)}
+                />
+                <p>PostList</p>
+                <PostList
+                    list={list}
+                />
+            </Wrapper>
+        </>
     );
 }
 

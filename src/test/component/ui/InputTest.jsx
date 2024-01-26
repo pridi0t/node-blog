@@ -11,12 +11,15 @@ const Wrapper = styled.div`
 
 function InputTest(props) {
     return (
-        <Wrapper>
-            <Input
-                type="text"
-                onChange={() => console.log("change")}
-            />
-        </Wrapper>
+        <>
+            <h3>Input TEST</h3>
+            <Wrapper>
+                <Input
+                    type="text"
+                    onChange={() => console.log("change")}
+                />
+            </Wrapper>
+        </>
     );
 }
 

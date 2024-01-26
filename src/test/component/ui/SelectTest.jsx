@@ -21,14 +21,17 @@ function SelectTest(props) {
     const [ selected, setSelected ] = useState("1");
 
     return (
-        <Select
-            value={selected}
-            list={list}
-            onChange={(event) => {
-                setSelected(event.target.value);
-                console.log(event.target.value);
-            }}
-        />
+        <>
+            <h3>Select TEST</h3>
+            <Select
+                value={selected}
+                list={list}
+                onChange={(event) => {
+                    setSelected(event.target.value);
+                    console.log(event.target.value);
+                }}
+            />
+        </>
     );
 }
 

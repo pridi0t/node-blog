@@ -27,7 +27,7 @@ function ProfileCardTest(props) {
 
     return (
         <>
-            <p>ProfileCard</p>
+            <h3>ProfileCard TEST</h3>
             <ProfileCard
                 nickname={`TEST`}
                 imageSrc={`/image/default-profile.png`}

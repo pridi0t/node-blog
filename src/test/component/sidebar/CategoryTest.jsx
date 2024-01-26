@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 function CategoryTest(props) {
     return (
         <>
-            <p>Category</p>
+            <h3>Category TEST</h3>
             <Wrapper>
                 {categoryData.map((item) => {
                     return (
