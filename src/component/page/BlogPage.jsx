@@ -77,7 +77,7 @@ function BlogPage(props) {
             <Sidebar>
                 <ProfileCard
                     nickname="USERID"
-                    imageSrc="/image/default-profile.png"
+                    imageSrc="/image/default-profileCard-profile.png"
                     imageClick={() => navigate("/profile")}
                     buttonList={buttonList}
                 />
