@@ -59,6 +59,10 @@ const WrapperImage = styled.div`
     width: 200px;
     height: 180px;
     border-radius: 50%;
+
+    &:hover {
+        border: 5px solid white;
+    }
 `;
 
 const RightInfo = styled.div`
@@ -101,6 +105,9 @@ const WrapperCardList = styled.div`
 
     & > div {
         width: 31%;
+    }
+    & > div:hover {
+        opacity: 0.8;
     }
 `;
 

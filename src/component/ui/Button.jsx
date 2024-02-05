@@ -9,6 +9,10 @@ const CustomButton = styled.button`
     color: ${(props) => props.$color ? props.$color : "black"};
     font-size: 12px;
     background: ${(props) => props.$background ? props.$background : "#F0BB62"};
+
+    &:hover {
+        text-shadow: 0px 0px 1px black;
+    }
 `;
 
 function Button(props) {

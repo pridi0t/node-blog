@@ -6,13 +6,16 @@ const Wrapper = styled.div`
     margin-bottom: 10px;
     padding: 10px 20px;
     border-radius: 5px;
+    color: black;
     background: white;
     opacity: ${(props) => props.$displaySub ? "0.8" : "1"};
     & a {
         text-decoration: none;
     }
-    & a:visited,
-    & a:active {
+    & a:hover {
+        font-weight: bold;
+    }
+    & a:visited {
         color: black;
     }
 `;

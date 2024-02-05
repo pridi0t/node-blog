@@ -19,6 +19,10 @@ const ProfileCardImage = styled.div`
     height: 60px;
     border: 1px solid black;
     border-radius: 15px;
+
+    &:hover {
+        border: 2px solid black;
+    }
 `;
 
 const Content = styled.div`

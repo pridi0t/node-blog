@@ -11,6 +11,10 @@ const Post = styled.div`
     padding: 15px;
     border: 2px solid #064635;
     border-radius: 10px;
+
+    &:hover {
+        transform: scale(1.02);
+    }
 `;
 
 const WrapperImage = styled.div`
