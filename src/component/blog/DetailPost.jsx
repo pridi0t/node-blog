@@ -30,7 +30,7 @@ const Date = styled.div`
     }
 `;
 
-function Post(props) {
+function DetailPost(props) {
     const { postData } = props;
     const { postId } = useParams();
 
@@ -54,4 +54,4 @@ function Post(props) {
     );
 }
 
-export default Post;
+export default DetailPost;

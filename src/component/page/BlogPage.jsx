@@ -6,7 +6,7 @@ import ProfileCard from "../sidebar/ProfileCard";
 import CategoryList from "../sidebar/CategoryList"
 import PostListContent from "../blog/PostListContent";
 import WritePost from "../blog/WritePost";
-import Post from "../blog/Post";
+import DetailPost from "../blog/DetailPost";
 
 import categoryData from "../../data/categoryData.json";
 import postData from "../../data/postData.json"
@@ -90,7 +90,7 @@ function BlogPage(props) {
                     <Routes>
                         <Route index element={<PostListContent title={`Recent Posts`} list={list} />}/>
                         <Route path="/post" element={<WritePost />} />
-                        <Route path="/post/:postId" element={<Post postData={postData}/>} />
+                        <Route path="/post/:postId" element={<DetailPost postData={postData}/>} />
                     </Routes>
                 </Content>
             </Wrapper>

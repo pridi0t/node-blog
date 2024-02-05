@@ -8,8 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import TextareaTest from "./component/ui/TextareaTest";
 // import ProfileCardTest from "./component/sidebar/ProfileCardTest";
 // import CategoryTest from "./component/sidebar/CategoryTest";
-// import PostListTest from "./component/blog/PostListTest";
-import PostCardTest from "./component/profile/PostCardTest";
+// import PostItemTest from "./component/blog/PostItemTest";
+// import PostCardTest from "./component/profile/PostCardTest";
 import ProfilePage from "../component/page/ProfilePage";
 import BlogPage from "../component/page/BlogPage";
 
@@ -33,18 +33,18 @@ function Test(props) {
             <hr />
             <CategoryTest />
             <hr />
-            <PostListTest />
+            <PostItemTest />
             <hr /> */}
             
-            <h3>Profile TEST</h3>
-            <PostCardTest />
+            {/* <h3>Profile TEST</h3>
+            <PostCardTest /> */}
             
             {/* PAGE TEST */}
-            {/* <Routes>
+            <Routes>
                 <Route index element={<p>메인화면</p>}/>
                 <Route path="/profile" element={<ProfilePage />}/>
                 <Route path="/blog/*" element={<BlogPage />}/>
-            </Routes> */}
+            </Routes>
         </BrowserRouter>
     );
 }

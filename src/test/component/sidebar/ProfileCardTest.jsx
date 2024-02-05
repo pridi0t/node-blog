@@ -30,7 +30,7 @@ function ProfileCardTest(props) {
             <h3>ProfileCard TEST</h3>
             <ProfileCard
                 nickname={`TEST`}
-                imageSrc={`/image/default-profile.png`}
+                imageSrc={`/image/default-profileCard-profile.png`}
                 imageClick={() => navigate("/profile")}
                 buttonList={buttonList}
             />

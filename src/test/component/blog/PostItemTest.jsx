@@ -3,15 +3,15 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 import postData from "../../../data/postData.json";
-import PostListItem from "../../../component/blog/PostListItem";
-import PostList from "../../../component/blog/PostList";
+import PostItem from "../../../component/blog/PostItem";
+import PostItemList from "../../../component/blog/PostItemList";
 
 const Wrapper = styled.div`
     width: 700px;
     padding: 20px;
 `;
 
-function PostListTest(props) {
+function PostItemTest(props) {
     const navigate = useNavigate();
     const PER_PAGE = 5;
     
@@ -25,14 +25,14 @@ function PostListTest(props) {
             <h3>PostItem TEST</h3>
             <Wrapper>
                 <p>PostListItem</p>
-                <PostListItem
+                <PostItem
                     title={list[0].title}
                     content={list[0].content}
                     thumbnail={`/image/default-post-thumbnail.png`}
                     onClick={() => navigate(`/blog/post/:${list[0]._id}`)}
                 />
                 <p>PostList</p>
-                <PostList
+                <PostItemList
                     list={list}
                 />
             </Wrapper>
@@ -40,4 +40,4 @@ function PostListTest(props) {
     );
 }
 
-export default PostListTest;
+export default PostItemTest;

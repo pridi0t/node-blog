@@ -1,9 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import PostListItem from "./PostListItem";
+import PostItem from "./PostItem";
 
-function PostList(props) {
+function PostItemList(props) {
     const navigate = useNavigate();
     const { list } = props;
     
@@ -12,7 +12,7 @@ function PostList(props) {
             const { _id, title, content, thumbnail } = item;
     
             return (
-                <PostListItem
+                <PostItem
                     key={_id}
                     title={title}
                     content={content}
@@ -24,4 +24,4 @@ function PostList(props) {
     );
 }
 
-export default PostList;
+export default PostItemList;

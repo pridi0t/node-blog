@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
-import PostList from "./PostList";
+import PostItemList from "./PostItemList";
 import Button from "../ui/Button";
 
 const Title = styled.h1`
@@ -23,7 +23,7 @@ function PostListContent(props) {
     return (
         <>
             <Title>{title}</Title>
-            <PostList list={list}/>
+            <PostItemList list={list}/>
             <WrapperButton>
                 <Button
                     name="Previous"

@@ -44,7 +44,7 @@ const Text = styled.p`
     text-overflow: ellipsis;
 `;
 
-function PostListItem(props) {
+function PostItem(props) {
     const { title, content, thumbnail, onClick } = props;
 
     return (
@@ -60,4 +60,4 @@ function PostListItem(props) {
     );
 }
 
-export default PostListItem;
+export default PostItem;
