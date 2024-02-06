@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import InputText from "../ui/Input";
+import Input from "../ui/Input";
 import Select from "../ui/Select";
 import Textarea from "../ui/Textarea";
 import Button from "../ui/Button";
@@ -63,7 +63,7 @@ function WritePost(props) {
             <PostInfo>
                 <WrapperInfo>
                     <Info>Title</Info>
-                    <InputText
+                    <Input
                         type="text"
                         placeholder="title"
                         onChange={(event) => setTitle(event.target.value)}

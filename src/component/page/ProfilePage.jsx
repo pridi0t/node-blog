@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 import Image from "../ui/Image";
-import ProfileCardList from "../profile/PostCardList";
+import PostCardList from "../profile/PostCardList";
 
 import postData from "../../data/postData.json"
 import userData from "../../data/userData.json";
@@ -159,7 +159,7 @@ function ProfilePage(props) {
                         <h1>Portfolio</h1>
                         <hr />
                         <WrapperCardList>
-                            <ProfileCardList list={postList} />
+                            <PostCardList list={postList} />
                         </WrapperCardList>
                     </Portfolio>
                 </Content>
