@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+
 import PostListContent from "./PostListContent";
 
 function CategoryContent(props) {
