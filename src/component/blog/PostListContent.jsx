@@ -20,25 +20,22 @@ function PostListContent(props) {
 
     const PER_PAGE = 5;
     const [start, setStart] = useState(0);
-    const [end, setEnd] = useState(start + PER_PAGE);
+    let end = (start + PER_PAGE > list.length + 1) ? (list.length + 1) : start + PER_PAGE;
     const [postList, setPostList] = useState(list.slice(start, end));
     
     function subPage() {
         let afterStart = (start - PER_PAGE < 0) ? 0 : (start - PER_PAGE);
-        let afterEnd = (end - PER_PAGE < PER_PAGE) ? PER_PAGE : (end - PER_PAGE);
         if (start != afterStart) {
             setStart(afterStart);
-            setEnd(afterEnd);
-            setPostList(list.slice(afterStart, afterEnd));
+            setPostList(list.slice(afterStart, afterStart + PER_PAGE));
         }
     }
 
     function addPage() {
-        let afterStart = (start + PER_PAGE > list.length - PER_PAGE) ? list.length - PER_PAGE : start + PER_PAGE;
-        let afterEnd = (end + PER_PAGE > list.length) ? list.length : (end + PER_PAGE);
-        if (start != afterStart) {
+        let afterStart = (start + PER_PAGE > list.length - 1) ? list.length : (start + PER_PAGE);
+        let afterEnd = (afterStart + PER_PAGE > list.length) ? (list.length) : (afterStart + PER_PAGE);
+        if ((start != afterStart) && (afterStart != afterEnd)) {
             setStart(afterStart);
-            setEnd(afterEnd)
             setPostList(list.slice(afterStart, afterEnd));
         }
     }

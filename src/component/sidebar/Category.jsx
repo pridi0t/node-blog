@@ -10,6 +10,7 @@ const Wrapper = styled.div`
     background: white;
     opacity: ${(props) => props.$displaySub ? "0.8" : "1"};
     & a {
+        color: black;
         text-decoration: none;
     }
     & a:hover {
@@ -47,6 +48,7 @@ const SubCategory = styled.a`
 function Category(props) {
     const { name, children } = props;
     const [displaySub, setDisplaySub] = useState(false);
+    const mainCategory = name;
 
     const toggleDisplay = () => {
         setDisplaySub(!displaySub);
@@ -56,7 +58,7 @@ function Category(props) {
         <Wrapper $displaySub={displaySub}>
             <WrapperCategory>
                 <MainCategory
-                    href={"#"}
+                    href={`/blog/post/main-category/${name}`}
                     $displaySub={displaySub}
                 >{name}
                 </MainCategory>
@@ -71,10 +73,11 @@ function Category(props) {
             {
                 children.map((item) => {
                     const { name } = item;
+
                     return (
                         <SubCategory
                             key={item.id}
-                            href={"#"}
+                            href={`/blog/post/main-category/${mainCategory}/sub-category/${name}`}
                             $displaySub={displaySub}
                         >{name}</SubCategory>
                     );
