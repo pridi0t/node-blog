@@ -66,11 +66,9 @@ function BlogPage(props) {
     const navigate = useNavigate();
 
     // 임시 데이터 (Post)
-    const PER_PAGE = 5;
     let list = postData.sort(function(a, b) {
-        return a.updated.localeCompare(b.updated);
+        return b.updated.localeCompare(a.updated);
     })
-    list = list.slice(0, PER_PAGE);
     
     return (
         <Container>
