@@ -16,7 +16,7 @@ function PostItemList(props) {
                     key={_id}
                     title={title}
                     content={content}
-                    thumbnail={thumbnail ? thumbnail : "/image/default-post-thumbnail.png"}
+                    thumbnail={thumbnail ? thumbnail : `${process.env.PUBLIC_URL}/image/default-post-thumbnail.png`}
                     onClick={() => navigate(`/blog/post/${_id}`)}
                 />
             );

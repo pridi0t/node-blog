@@ -127,7 +127,7 @@ function ProfilePage(props) {
                         <LeftInfo>
                             <WrapperImage>
                                 <Image
-                                    src="/image/default-profile.png"
+                                    src={`${process.env.PUBLIC_URL}/image/default-profile.png`}
                                     onClick={() => navigate("/blog")}
                                 />
                             </WrapperImage>
@@ -140,7 +140,7 @@ function ProfilePage(props) {
                             { user.git && 
                                 <Icon>
                                     <Image
-                                        src="/image/icon-github.png"
+                                        src={`${process.env.PUBLIC_URL}/image/icon-github.png`}
                                         onClick={() => console.log(`${user.git}`)}
                                     />
                                 </Icon>
@@ -148,7 +148,7 @@ function ProfilePage(props) {
                             { user.email && 
                                 <Icon>
                                     <Image
-                                        src="/image/icon-email.png"
+                                        src={`${process.env.PUBLIC_URL}/image/icon-email.png`}
                                         onClick={() => console.log(`${user.email}`)}
                                     />
                                 </Icon>

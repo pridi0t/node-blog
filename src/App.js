@@ -6,7 +6,7 @@ import BlogPage from "./component/page/BlogPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
           <Route index element={<ProfilePage />} />
           <Route path="/profile" element={<ProfilePage />}/>

@@ -58,7 +58,7 @@ function Category(props) {
         <Wrapper $displaySub={displaySub}>
             <WrapperCategory>
                 <MainCategory
-                    href={`/blog/post/main-category/${name}`}
+                    href={`${process.env.PUBLIC_URL}/blog/post/main-category/${name}`}
                     $displaySub={displaySub}
                 >{name}
                 </MainCategory>
@@ -77,7 +77,7 @@ function Category(props) {
                     return (
                         <SubCategory
                             key={item.id}
-                            href={`/blog/post/main-category/${mainCategory}/sub-category/${name}`}
+                            href={`${process.env.PUBLIC_URL}/blog/post/main-category/${mainCategory}/sub-category/${name}`}
                             $displaySub={displaySub}
                         >{name}</SubCategory>
                     );

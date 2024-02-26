@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import PostCard from "./PostCard";
 
 function PostCardList(props) {
+    const navigate = useNavigate();
     const { list } = props;
 
     return (
@@ -14,8 +16,8 @@ function PostCardList(props) {
                     key={_id}
                     title={title}
                     content={content}
-                    thumbnail={thumbnail ? thumbnail : "/image/default-postcard-thumbnail.png"}
-                    onClick={() => window.open(`/blog/post/${_id}`, "_blank")}
+                    thumbnail={thumbnail ? thumbnail : `${process.env.PUBLIC_URL}/image/default-postcard-thumbnail.png`}
+                    onClick={() => window.open(`${process.env.PUBLIC_URL}/blog/post/${_id}`, "_blank")}
                 />
             );
         })
